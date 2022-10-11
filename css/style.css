@@ -1,0 +1,148 @@
+/*------------------
+        Conteneodor global
+------------------*/
+
+.contenedorFormulario {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background: #c4c4c4;
+}
+
+/*------------------
+        Header
+------------------*/
+.contenedor-header {
+  width: 100%;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between;
+  border-radius: 10px !important;
+  margin-bottom: 0 !important;
+}
+.contenedor-header p {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  margin: 0 !important;
+}
+.contenedor-header i {
+  color: #fff;
+  cursor: pointer;
+}
+
+/*------------------
+        body
+------------------*/
+
+.contenedor-body {
+  width: 800px;
+  max-height: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: -10px;
+  display: flex;
+}
+
+/*------------------
+    forms Inputs
+------------------*/
+.input-field {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.input-field input[type="text"] {
+  border-bottom: 1px solid #fdcb46 !important;
+  box-shadow: 0 1px 0 0 #fdcb46 !important;
+}
+.input-field input[type="email"] {
+  border-bottom: 1px solid #fdcb46 !important;
+  box-shadow: 0 1px 0 0 #fdcb46 !important;
+}
+
+.input-field input[type="text"]:focus + label {
+  color: #fdcb46 !important;
+}
+.input-field input[type="email"]:focus + label {
+  color: #fdcb46 !important;
+}
+.btn-large {
+  width: 100%;
+  color: #000 !important;
+  font-weight: bold !important;
+  letter-spacing: 2px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  border-radius: 5px;
+}
+.terminos {
+  color: #fdcb46 !important;
+}
+/*------------------
+   Contenedor Izquierdo
+------------------*/
+
+.columna-izquierdo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 3rem !important;
+  width: 50%;
+}
+
+/*------------------
+   Contenedor Derecho
+------------------*/
+.columna-derecha {
+  width: 50%;
+  text-align: right;
+  padding: 0 !important;
+}
+/* Imagen */
+.imagen-prueba {
+  width: 100%;
+  height: 550px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 !important;
+}
+/*------------------
+   Responsive
+------------------*/
+
+@media (max-width: 880px) {
+  /*Contenedores y columnas*/
+  .contenedorForm {
+    width: 100%;
+  }
+  .contenedor-body {
+    width: 100%;
+  }
+  .imagen-prueba {
+    display: none;
+  }
+  .columna-izquierdo {
+    width: 100% !important;
+    padding: 1rem 3rem !important;
+  }
+  .columna-derecha {
+    width: 0;
+  }
+  /* Repsonsividad en el header */
+  .contenedor-header p {
+    font-size: 1rem;
+  }
+  .contenedor-header i {
+    font-size: 1rem;
+  }
+}
